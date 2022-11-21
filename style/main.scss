@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+
+main{
+    height: 100vh;
+    background-color: black;
+    background-image: url('../assets/home/background-home-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 35px;
+    nav{
+        /* background-color: #ff000034; */
+        min-height: 75px;
+        height: 10vh;
+        display: flex;
+        flex-direction: row-reverse;
+        .menu{
+            background-color: #55545421;
+            backdrop-filter: blur(10px);
+            min-width: 600px;
+            width: 60vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                margin-left: 30px;
+            }
+        }
+    }
+}
