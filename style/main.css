@@ -36,6 +36,14 @@ main nav .logo {
   height: 80px;
 }
 
+main nav .nav-line {
+  height: 2px;
+  width: 200px;
+  background-color: #77777762;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
 main nav .menu {
   background-color: #55545421;
   -webkit-backdrop-filter: blur(10px);

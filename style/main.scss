@@ -27,6 +27,12 @@ main{
             width: 50px;
             height: 80px;
         }
+        .nav-line{
+          height: 2px;
+          width: 200px;
+          background-color: #77777762;
+            backdrop-filter: blur(10px);
+        }
         .menu{
             background-color: #55545421;
             backdrop-filter: blur(10px);
