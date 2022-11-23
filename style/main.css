@@ -25,10 +25,28 @@ main nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* flex-direction: row-reverse; */
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-main nav .logo {
+main nav .logo-wrap {
+  background-color: green;
+  width: 80px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 2%;
+}
+
+main nav .logo-wrap .logo {
   background-image: url("../assets/shared/logo.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -36,19 +54,42 @@ main nav .logo {
   height: 80px;
 }
 
-main nav .nav-line {
+main nav .content-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main nav .content-wrap .line-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* margin-right: -55px; */
+}
+
+main nav .content-wrap .line-wrap .nav-line {
   height: 2px;
-  width: 200px;
+  width: 20vw;
   background-color: #77777762;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
 
-main nav .menu {
+main nav .content-wrap .menu {
   background-color: #55545421;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  min-width: 600px;
+  min-width: 650px;
   width: 60vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,7 +102,7 @@ main nav .menu {
           align-items: center;
 }
 
-main nav .menu a {
+main nav .content-wrap .menu a {
   margin-left: 80px;
   /* background-color: red; */
   line-height: 75px;
@@ -91,7 +132,7 @@ main nav .menu a {
                   } */
 }
 
-main nav .menu a::before {
+main nav .content-wrap .menu a::before {
   content: '';
   position: absolute;
   height: 3px;
@@ -103,11 +144,11 @@ main nav .menu a::before {
   transition: all .5s ease;
 }
 
-main nav .menu a:hover::before {
+main nav .content-wrap .menu a:hover::before {
   width: 100%;
 }
 
-main nav .menu a:active::before {
+main nav .content-wrap .menu a:active::before {
   width: 100%;
   background: white;
 }
