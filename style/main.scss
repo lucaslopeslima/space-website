@@ -213,11 +213,10 @@ main{
       height: 100vh;
       .section{
         height: 100%;
-        background-color: yellow;
         padding: 80px;
       }
       .home{
-        /* opacity: 0; */
+        opacity: 0;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -274,13 +273,11 @@ main{
         /* background-color: rgba(255, 0, 0, 0.658); */
         transform: translateY(-100%);
         .nav-menu-active-txt{
-          background-color: green;
           text-align: center;
           width: 30%;
         }
         .destination-content{
           padding-top: 55px;
-          background-color: #979797;
           display: flex;
           justify-content: space-around;
           align-items: center;
@@ -291,18 +288,15 @@ main{
           .destination-container{
             width: 50%;
             max-width: 445px;
-            background-color: blue;
             .destination-menu{
               font-family: 'Barlow', sans-serif;
               text-transform: uppercase;
-              background-color: red;
               padding-left: 15px;
               width: 350px;
               display: flex;
               justify-content: space-between;
               align-items: center;
               a{
-                background-color: rgb(131, 131, 131);
                 line-height: 55px;
                 text-decoration: none;
                 color: white;

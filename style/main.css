@@ -290,12 +290,11 @@ main .main-content {
 
 main .main-content .section {
   height: 100%;
-  background-color: yellow;
   padding: 80px;
 }
 
 main .main-content .home {
-  /* opacity: 0; */
+  opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,14 +376,12 @@ main .main-content .destination {
 }
 
 main .main-content .destination .nav-menu-active-txt {
-  background-color: green;
   text-align: center;
   width: 30%;
 }
 
 main .main-content .destination .destination-content {
   padding-top: 55px;
-  background-color: #979797;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,13 +400,11 @@ main .main-content .destination .destination-content .destination-img {
 main .main-content .destination .destination-content .destination-container {
   width: 50%;
   max-width: 445px;
-  background-color: blue;
 }
 
 main .main-content .destination .destination-content .destination-container .destination-menu {
   font-family: 'Barlow', sans-serif;
   text-transform: uppercase;
-  background-color: red;
   padding-left: 15px;
   width: 350px;
   display: -webkit-box;
@@ -424,7 +419,6 @@ main .main-content .destination .destination-content .destination-container .des
 }
 
 main .main-content .destination .destination-content .destination-container .destination-menu a {
-  background-color: #838383;
   line-height: 55px;
   text-decoration: none;
   color: white;
