@@ -162,7 +162,7 @@ main .main-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: green;
+  /* background-color: green; */
   height: 80%;
   /* position: absolute;
       bottom: 80px; */
@@ -171,6 +171,7 @@ main .main-content {
 main .main-content .main-content-txt {
   width: 30%;
   max-width: 360px;
+  color: white;
   background-color: red;
 }
 
@@ -202,9 +203,21 @@ main .main-content .main-content-img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-box-shadow: 0px 0px 15px 5px #ffffff;
+          box-shadow: 0px 0px 15px 5px #ffffff;
+}
+
+main .main-content .main-content-img:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  -webkit-box-shadow: 0px 0px 15px 5px #ffffff;
+          box-shadow: 0px 0px 15px 5px #ffffff;
 }
 
 main .main-content .main-content-img a {
+  color: black;
   text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
