@@ -3,6 +3,10 @@
   padding: 0;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  /*
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Bellefair', serif;
+    */
 }
 
 html, body {
@@ -16,6 +20,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 35px;
+  font-family: 'Barlow', sans-serif;
 }
 
 main nav {
@@ -34,7 +39,7 @@ main nav {
 }
 
 main nav .logo-wrap {
-  background-color: green;
+  /* background-color: green; */
   width: 80px;
   height: 100%;
   display: -webkit-box;
@@ -74,7 +79,8 @@ main nav .content-wrap .line-wrap {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* margin-right: -55px; */
+  z-index: 2;
+  margin-right: -35px;
 }
 
 main nav .content-wrap .line-wrap .nav-line {
@@ -170,18 +176,24 @@ main .main-content {
 
 main .main-content .main-content-txt {
   width: 30%;
-  max-width: 360px;
+  max-width: 430px;
   color: white;
+  text-align: justify;
   background-color: red;
 }
 
 main .main-content .main-content-txt h1 {
   font-size: 2rem;
+  text-transform: uppercase;
+  margin-left: 5px;
 }
 
 main .main-content .main-content-txt h1 span {
-  display: block;
-  font-size: 9rem;
+  display: inline-block;
+  margin-left: -10px;
+  width: 100%;
+  font-size: 9.3rem;
+  font-family: 'Bellefair', serif;
 }
 
 main .main-content .main-content-txt p {
