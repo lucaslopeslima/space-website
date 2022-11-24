@@ -124,6 +124,7 @@ main{
       bottom: 80px; */
       .main-content-txt{
         width: 30%;
+        max-width: 360px;
         h1{
           font-size: 2rem;
           span{
@@ -132,7 +133,8 @@ main{
           }
         }
         p{
-          font-size: 1.5rem;
+          margin-top: 35px;
+          font-size: 1.2rem;
         }
         background-color: red;
       }
