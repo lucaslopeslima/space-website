@@ -15,6 +15,7 @@ html, body {
 }
 
 header {
+  padding-top: 15px;
   width: 100vw;
   position: fixed;
 }
@@ -111,27 +112,6 @@ header nav .content-wrap .menu a {
   text-decoration: none;
   color: white;
   position: relative;
-  /* &:hover{
-                border-top: 3px solid transparent;
-                border-bottom: 3px solid white;
-            } */
-  /* &::after {
-                position: absolute;
-                content: "";
-                top: 100%;
-                left: 0;
-                width: 100%;
-                height: 3px;
-                background: white;
-                transform: scaleX(0);
-                transform-origin: right;
-                transition: transform 0.5s;
-              }
-        
-              &:hover::after {
-                transform: scaleX(1);
-                transform-origin: left;
-              } */
 }
 
 header nav .content-wrap .menu a::before {
@@ -157,12 +137,12 @@ header nav .content-wrap .menu a:active::before {
 
 main {
   height: 100vh;
-  background-color: black;
   background-image: url("../assets/home/background-home-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 35px;
   font-family: 'Barlow', sans-serif;
+  font-weight: 400;
 }
 
 main nav {
@@ -304,22 +284,18 @@ main nav .content-wrap .menu a:active::before {
 main .main-content {
   margin-top: 85px;
   height: 100%;
+  background-color: red;
+  height: 100vh;
 }
 
 main .main-content .section {
-  height: 80%;
-  /* display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        background-color: rgba(255, 255, 0, 0.29); */
-}
-
-main .main-content .nav-menu-active-txt {
-  /* background-color: green; */
-  width: 50%;
+  height: 100%;
+  background-color: yellow;
+  padding: 80px;
 }
 
 main .main-content .home {
+  /* opacity: 0; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,12 +369,121 @@ main .main-content .home .main-content-img a {
 }
 
 main .main-content .destination {
-  padding: 80px;
-  /* background-image: url('../assets/destination/background-destination-desktop.jpg');
-        background-repeat: no-repeat;
-        background-size: cover; */
-  background-color: red;
+  /* background-color: green; */
+  /* padding: 80px; */
+  /* background-color: rgba(255, 0, 0, 0.658); */
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+
+main .main-content .destination .nav-menu-active-txt {
+  background-color: green;
+  text-align: center;
+  width: 30%;
+}
+
+main .main-content .destination .destination-content {
+  padding-top: 55px;
+  background-color: #979797;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main-content .destination .destination-content .destination-img {
+  width: 445px;
+  height: 445px;
+}
+
+main .main-content .destination .destination-content .destination-container {
+  width: 50%;
+  max-width: 445px;
+  background-color: blue;
+}
+
+main .main-content .destination .destination-content .destination-container .destination-menu {
+  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase;
+  background-color: red;
+  padding-left: 15px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main-content .destination .destination-content .destination-container .destination-menu a {
+  background-color: #838383;
+  line-height: 55px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+main .main-content .destination .destination-content .destination-container .destination-menu a::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 0px;
+  left: 0;
+  bottom: 0px;
+  background: #979797;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+main .main-content .destination .destination-content .destination-container .destination-menu a:hover::before {
+  width: 100%;
+}
+
+main .main-content .destination .destination-content .destination-container .destination-menu a:active::before {
+  width: 100%;
+  background: white;
+}
+
+main .main-content .destination .destination-content .destination-container .destination-txt {
+  font-family: 'Barlow', sans-serif;
+  color: white;
+}
+
+main .main-content .destination .destination-content .destination-container .destination-txt .destination-title {
+  font-family: 'Bellefair', serif;
+  font-size: 8.5rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+}
+
+main .main-content .destination .destination-content .destination-container .destination-txt .destination-line {
+  width: 100%;
+  height: 1px;
+  background-color: #979797;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+main .main-content .destination .destination-content .destination-container .destination-txt .destination-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-transform: uppercase;
+}
+
+main .main-content .destination .destination-content .destination-container .destination-txt .destination-info h2 {
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */
