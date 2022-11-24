@@ -152,4 +152,24 @@ main nav .content-wrap .menu a:active::before {
   width: 100%;
   background: white;
 }
+
+main .main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: green;
+  height: 80%;
+  /* position: absolute;
+      bottom: 80px; */
+}
+
+main .main-content .main-content-txt {
+  width: 40%;
+  background-color: red;
+}
 /*# sourceMappingURL=main.css.map */
