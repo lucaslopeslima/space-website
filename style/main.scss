@@ -9,7 +9,7 @@
 }
 html, body{
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 header{
   padding-top: 15px;
@@ -209,11 +209,22 @@ main{
     .main-content{
       margin-top: 85px;
       height: 100%;
-      background-color: red;
+      background-color: green;
       height: 100vh;
       .section{
         height: 100%;
         padding: 80px;
+        .nav-menu-active-txt{
+          text-align: center;
+          width: 30%;
+          color: white;
+          font-weight: 400;
+          span{
+            font-weight: bold;
+            color: #979797;
+            margin-right: 15px;
+          }
+        }
       }
       .home{
         opacity: 0;
@@ -268,14 +279,12 @@ main{
       }
       }
       .destination{
+        opacity: 0;
         /* background-color: green; */
         /* padding: 80px; */
         /* background-color: rgba(255, 0, 0, 0.658); */
         transform: translateY(-100%);
-        .nav-menu-active-txt{
-          text-align: center;
-          width: 30%;
-        }
+        
         .destination-content{
           padding-top: 55px;
           display: flex;
@@ -350,6 +359,13 @@ main{
           }
           
         }
+      }
+      .crew{
+        transform: translateY(-200%);
+      }
+      .tecnology{
+        opacity: 0;
+        transform: translateY(-300%);
       }
     }
 }

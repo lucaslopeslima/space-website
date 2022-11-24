@@ -11,7 +11,7 @@
 
 html, body {
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 header {
@@ -284,13 +284,26 @@ main nav .content-wrap .menu a:active::before {
 main .main-content {
   margin-top: 85px;
   height: 100%;
-  background-color: red;
+  background-color: green;
   height: 100vh;
 }
 
 main .main-content .section {
   height: 100%;
   padding: 80px;
+}
+
+main .main-content .section .nav-menu-active-txt {
+  text-align: center;
+  width: 30%;
+  color: white;
+  font-weight: 400;
+}
+
+main .main-content .section .nav-menu-active-txt span {
+  font-weight: bold;
+  color: #979797;
+  margin-right: 15px;
 }
 
 main .main-content .home {
@@ -368,16 +381,12 @@ main .main-content .home .main-content-img a {
 }
 
 main .main-content .destination {
+  opacity: 0;
   /* background-color: green; */
   /* padding: 80px; */
   /* background-color: rgba(255, 0, 0, 0.658); */
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-}
-
-main .main-content .destination .nav-menu-active-txt {
-  text-align: center;
-  width: 30%;
 }
 
 main .main-content .destination .destination-content {
@@ -479,5 +488,16 @@ main .main-content .destination .destination-content .destination-container .des
 main .main-content .destination .destination-content .destination-container .destination-txt .destination-info h2 {
   font-family: 'Bellefair', serif;
   font-weight: 400;
+}
+
+main .main-content .crew {
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+}
+
+main .main-content .tecnology {
+  opacity: 0;
+  -webkit-transform: translateY(-300%);
+          transform: translateY(-300%);
 }
 /*# sourceMappingURL=main.css.map */
