@@ -160,6 +160,10 @@ main nav .content-wrap .menu a:active::before {
 }
 
 main .main-content {
+  height: 100%;
+}
+
+main .main-content .home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,27 +172,27 @@ main .main-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* background-color: green; */
+  background-color: green;
   height: 80%;
   /* position: absolute;
       bottom: 80px; */
 }
 
-main .main-content .main-content-txt {
+main .main-content .home .main-content-txt {
   width: 30%;
   max-width: 430px;
   color: white;
   text-align: justify;
-  background-color: red;
+  /* background-color: red; */
 }
 
-main .main-content .main-content-txt h1 {
+main .main-content .home .main-content-txt h1 {
   font-size: 2rem;
   text-transform: uppercase;
   margin-left: 5px;
 }
 
-main .main-content .main-content-txt h1 span {
+main .main-content .home .main-content-txt h1 span {
   display: inline-block;
   margin-left: -10px;
   width: 100%;
@@ -196,12 +200,12 @@ main .main-content .main-content-txt h1 span {
   font-family: 'Bellefair', serif;
 }
 
-main .main-content .main-content-txt p {
+main .main-content .home .main-content-txt p {
   margin-top: 35px;
   font-size: 1.2rem;
 }
 
-main .main-content .main-content-img {
+main .main-content .home .main-content-img {
   width: 350px;
   height: 350px;
   background-color: white;
@@ -221,14 +225,14 @@ main .main-content .main-content-img {
           box-shadow: 0px 0px 15px 5px #ffffff;
 }
 
-main .main-content .main-content-img:hover {
+main .main-content .home .main-content-img:hover {
   -webkit-filter: invert(1);
           filter: invert(1);
   -webkit-box-shadow: 0px 0px 15px 5px #ffffff;
           box-shadow: 0px 0px 15px 5px #ffffff;
 }
 
-main .main-content .main-content-img a {
+main .main-content .home .main-content-img a {
   color: black;
   text-decoration: none;
 }
