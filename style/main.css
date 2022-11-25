@@ -515,7 +515,49 @@ main .main-content .crew .tecnology-slide .owl-carousel span {
 main .main-content .crew .tecnology-slide .owl-carousel .item {
   width: 100vw;
   height: 70vh;
-  background-color: yellow;
+  /* background-color: yellow; */
+}
+
+main .main-content .crew .tecnology-slide .owl-carousel .item .item-content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .main-content .crew .tecnology-slide .owl-carousel .item .item-content-wrap .item-txt {
+  width: 30%;
+  color: white;
+}
+
+main .main-content .crew .tecnology-slide .owl-carousel .item .item-content-wrap .item-txt h3 {
+  color: gray;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+main .main-content .crew .tecnology-slide .owl-carousel .item .item-content-wrap .item-txt h2 {
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+main .main-content .crew .tecnology-slide .owl-carousel .item .item-content-wrap .item-txt p {
+  text-align: justify;
+  font-size: 1.2rem;
+  width: 65%;
+}
+
+main .main-content .crew .tecnology-slide .owl-carousel .item .item-content-wrap .item-img {
+  max-width: 100%;
+  height: auto;
 }
 
 main .main-content .tecnology {
