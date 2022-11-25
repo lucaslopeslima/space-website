@@ -22,7 +22,6 @@ console.log(sections)
 console.log(sectBtns)
 console.log(sectBtn)
 console.log(allSections)
-//const allSections = document.getElementById('main-content')
 
 
 function pageTransitions(){
@@ -46,15 +45,15 @@ function pageTransitions(){
         if (id){
             //remove selected from the other btns
             sectBtns.forEach((btn) =>{
-                btn.classList.remove('active')
+                btn.classList.remove('sec-active')
             })
-            e.target.classList.add('active')
+            e.target.classList.add('sec-active')
             //hide other sections
             sections.forEach((section)=>{
-                section.classList.remove('active')
+                section.classList.remove('sec-active')
             })
             const element = document.getElementById(id)
-            element.classList.add('active')
+            element.classList.add('sec-active')
         }
         if(id == 'home'){
             console.log('mudar bg do main')
@@ -70,24 +69,6 @@ function pageTransitions(){
             main.style.cssText = "background-image: url('../assets//technology/background-technology-desktop.jpg');"
         }
     })
-    //Toogle Theme
-    /* const themeBtn = document.querySelector('.theme-btn');
-    themeBtn.addEventListener('click',() =>{
-        let element = document.body;
-        let backimg = document.querySelector('.img-background')
-        element.classList.toggle('light-mode')
-        backimg.classList.toggle('img-light')
-    }) */
-    //img color
-    /* document.querySelector('.image').onmousemove = (e) => {
-
-        const x = e.pageX - e.target.offsetLeft
-        const y = e.pageY - e.target.offsetTop
-    
-        e.target.style.setProperty('--x', `${ x }px`)
-        e.target.style.setProperty('--y', `${ y }px`)
-        
-    } */
 }
 pageTransitions()
 
