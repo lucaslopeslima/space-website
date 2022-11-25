@@ -13,7 +13,7 @@ console.log(destination)
 console.log(crew)
 console.log(tecnology) */
 
-
+const main = document.querySelector('#main')
 const sections = document.querySelectorAll('.section')
 const sectBtns = document.querySelectorAll('.controlls')
 const sectBtn = document.querySelectorAll('.control')
@@ -41,7 +41,7 @@ function pageTransitions(){
     //Section Active
     allSections.addEventListener('click', (e) =>{
         const id = e.target.dataset.id
-        console.log(id + 'esse é o id')
+        console.log(id + ' esse é o id')
         
         if (id){
             //remove selected from the other btns
@@ -55,6 +55,19 @@ function pageTransitions(){
             })
             const element = document.getElementById(id)
             element.classList.add('active')
+        }
+        if(id == 'home'){
+            console.log('mudar bg do main')
+            main.style.cssText = "background-image: url('../assets/home/background-home-desktop.jpg');"
+        }
+        if(id == 'destination'){
+            main.style.cssText = "background-image: url('../assets/destination/background-destination-desktop.jpg');"
+        }
+        if(id == 'crew'){
+            main.style.cssText = "background-image: url('../assets/crew/background-crew-desktop.jpg');"
+        }
+        if(id == 'tecnology'){
+            main.style.cssText = "background-image: url('../assets//technology/background-technology-desktop.jpg');"
         }
     })
     //Toogle Theme
