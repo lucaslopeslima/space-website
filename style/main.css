@@ -21,6 +21,7 @@ html, body {
   -webkit-transition: all 1.4s ease-in-out;
   transition: all 1.4s ease-in-out;
   font-family: 'Barlow', sans-serif;
+  background-color: black;
 }
 
 header {
