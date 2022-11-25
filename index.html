@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Bellefair&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="main-contents">
     <header>
         <nav>
             <div class="logo-wrap">
@@ -27,11 +27,15 @@
                 <div class="line-wrap">
                     <div class="nav-line"></div>
                 </div>
-                <div class="menu">
-                    <a href=""><span>00</span> Home</a>
-                    <a href=""><span>01</span> Destination</a>
-                    <a href=""><span>02</span> Crew</a>
-                    <a href=""><span>03</span> Tecnology</a>
+                <div class="menu controlls">
+                    <div class="menu-top control active-btn" data-id="home" ><span>00</span> Home</div>
+                    <div class="menu-top control" data-id="destination" ><span>01</span> Destination</div>
+                    <div class="menu-top control" data-id="crew" ><span>02</span> Crew</div>
+                    <div class="menu-top control" data-id="tecnology" ><span>03</span> Tecnology</div>
+                    <!-- <a class="menu-top control active-btn" href=""><span>00</span> Home</a>
+                    <a class="menu-top control " href=""><span>01</span> Destination</a>
+                    <a class="menu-top control " href=""><span>02</span> Crew</a>
+                    <a class="menu-top control " href=""><span>03</span> Tecnology</a> -->
                 </div>
             </div>
         </nav>
@@ -39,22 +43,24 @@
 
     <main>
 
-         <div class="main-content">
+         <div class="main-content" id="main-content">
             
-            <div class="home section">
-                <div class="main-content-txt">
-                    <h1>So, you want to travel to <span>SPACE</span></h1>
-                    <p>Let’s face it; if you want to go to space, you might as well genuinely go to
-                        outer space and not hover kind of on the edge of it. Well sit back, and relax
-                        because we’ll give you a truly out of this world experience!</p>
-                </div>
-                <div class="main-content-img">
-                    <a href=""><h2>Explore</h2></a>
+            <div class="home section active" id="home">
+                <div class="home-wrap">
+                    <div class="main-content-txt">
+                        <h1>So, you want to travel to <span>SPACE</span></h1>
+                        <p>Let’s face it; if you want to go to space, you might as well genuinely go to
+                            outer space and not hover kind of on the edge of it. Well sit back, and relax
+                            because we’ll give you a truly out of this world experience!</p>
+                    </div>
+                    <div class="main-content-img">
+                        <a href=""><h2>Explore</h2></a>
+                    </div>
                 </div>
             </div><!-- /.home -->
 
 
-            <div class="destination section">
+            <div class="destination section " id="destination">
 
                 <h2 class="nav-menu-active-txt"><span>01 </span> Pick your destination.</h2>
                 <div class="destination-content">
@@ -88,7 +94,7 @@
                 </div><!-- /.destination-content -->
             </div><!-- /.destination -->
 
-            <div class="crew section">
+            <div class="crew section " id="crew">
                 <h2 class="nav-menu-active-txt"><span>02 </span> meet your crew.</h2>
                 <div class="tecnology-slide">
                     <div class="owl-carousel owl-theme">
@@ -140,7 +146,7 @@
 
             </div><!--crew-->
 
-            <div class="tecnology section">
+            <div class="tecnology section " id="tecnology">
                 <h2 class="nav-menu-active-txt"><span>03 </span> space launch.</h2>
                 
             </div>

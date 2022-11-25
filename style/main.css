@@ -11,7 +11,7 @@
 
 html, body {
   height: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 header {
@@ -105,16 +105,17 @@ header nav .content-wrap .menu {
           align-items: center;
 }
 
-header nav .content-wrap .menu a {
+header nav .content-wrap .menu a, header nav .content-wrap .menu div {
+  cursor: pointer;
+  text-transform: uppercase;
   margin-left: 80px;
-  /* background-color: red; */
   line-height: 75px;
   text-decoration: none;
   color: white;
   position: relative;
 }
 
-header nav .content-wrap .menu a::before {
+header nav .content-wrap .menu a::before, header nav .content-wrap .menu div::before {
   content: '';
   position: absolute;
   height: 3px;
@@ -126,13 +127,13 @@ header nav .content-wrap .menu a::before {
   transition: all .5s ease;
 }
 
-header nav .content-wrap .menu a:hover::before {
+header nav .content-wrap .menu a:hover::before, header nav .content-wrap .menu div:hover::before {
   width: 100%;
 }
 
-header nav .content-wrap .menu a:active::before {
-  width: 100%;
-  background: white;
+header nav .content-wrap .menu a span, header nav .content-wrap .menu div span {
+  font-weight: bold;
+  margin-right: 5px;
 }
 
 main {
@@ -284,7 +285,7 @@ main nav .content-wrap .menu a:active::before {
 main .main-content {
   margin-top: 85px;
   height: 100%;
-  background-color: green;
+  /* background-color: green; */
   height: 100vh;
 }
 
@@ -307,18 +308,24 @@ main .main-content .section .nav-menu-active-txt span {
 }
 
 main .main-content .home {
-  opacity: 0;
+  /* visibility: hidden; */
+  display: none;
+}
+
+main .main-content .home .home-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 70%;
+  /* padding: 80px; */
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: green;
+  /* background-color: green; */
   /* position: absolute;
-        bottom: 80px; */
+          bottom: 80px; */
 }
 
 main .main-content .home .main-content-txt {
@@ -381,12 +388,12 @@ main .main-content .home .main-content-img a {
 }
 
 main .main-content .destination {
-  opacity: 0;
+  /* visibility: hidden; */
+  display: none;
   /* background-color: green; */
   /* padding: 80px; */
   /* background-color: rgba(255, 0, 0, 0.658); */
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  /* transform: translateY(-100%); */
 }
 
 main .main-content .destination .destination-content {
@@ -491,18 +498,17 @@ main .main-content .destination .destination-content .destination-container .des
 }
 
 main .main-content .crew {
-  z-index: 999;
-  -webkit-transform: translateY(-200%);
-          transform: translateY(-200%);
+  display: none;
+  /* transform: translateY(-200%); */
 }
 
 main .main-content .crew .tecnology-slide {
-  background-color: red;
+  /* background-color: red; */
   height: 70%;
 }
 
 main .main-content .crew .tecnology-slide .owl-carousel {
-  background-color: blue;
+  /* background-color: blue; */
   height: 100%;
   position: relative;
 }
@@ -561,9 +567,26 @@ main .main-content .crew .tecnology-slide .owl-carousel .item .item-content-wrap
 }
 
 main .main-content .tecnology {
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: translateY(-300%);
-          transform: translateY(-300%);
+  display: none;
+  /* transform: translateY(-300%); */
+}
+
+/* GERAIS */
+.active-btn {
+  position: relative;
+}
+
+.active-btn::before {
+  content: '';
+  position: absolute !important;
+  height: 3px;
+  width: 100% !important;
+  left: 0;
+  bottom: 0px;
+  background: white !important;
+}
+
+.active {
+  display: block !important;
 }
 /*# sourceMappingURL=main.css.map */

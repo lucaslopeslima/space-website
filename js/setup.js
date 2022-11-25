@@ -9,4 +9,4 @@ $('.custom1').owlCarousel({
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel();
 });
-console.log('setup')
+//console.log('setup')
