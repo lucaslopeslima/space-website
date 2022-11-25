@@ -9,9 +9,17 @@
     */
 }
 
+:root {
+  --color-black: #0b0d17;
+  --color-gray: #d0d6f9;
+  --color-white: #ffffff;
+}
+
 html, body {
   height: 100%;
   overflow: hidden;
+  -webkit-transition: all 1.4s ease-in-out;
+  transition: all 1.4s ease-in-out;
 }
 
 header {
@@ -156,6 +164,8 @@ main .main-content {
 main .main-content .section {
   height: 100%;
   padding: 80px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 main .main-content .section .nav-menu-active-txt {
@@ -195,7 +205,7 @@ main .main-content .home .home-wrap {
 main .main-content .home .main-content-txt {
   width: 30%;
   max-width: 430px;
-  color: white;
+  color: var(--color-gray);
   text-align: justify;
   /* background-color: red; */
 }
@@ -204,6 +214,7 @@ main .main-content .home .main-content-txt h1 {
   font-size: 2rem;
   text-transform: uppercase;
   margin-left: 5px;
+  font-weight: 400;
 }
 
 main .main-content .home .main-content-txt h1 span {
@@ -212,6 +223,8 @@ main .main-content .home .main-content-txt h1 span {
   width: 100%;
   font-size: 9.3rem;
   font-family: 'Bellefair', serif;
+  font-weight: 400;
+  color: var(--color-white);
 }
 
 main .main-content .home .main-content-txt p {
@@ -246,9 +259,11 @@ main .main-content .home .main-content-img:hover {
           box-shadow: 0px 0px 15px 5px #ffffff;
 }
 
-main .main-content .home .main-content-img a {
-  color: black;
-  text-decoration: none;
+main .main-content .home .main-content-img h2 {
+  font-family: 'Bellefair', serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 main .main-content .destination {

@@ -7,9 +7,15 @@
     font-family: 'Bellefair', serif;
     */
 }
+:root{
+  --color-black: #0b0d17;
+  --color-gray: #d0d6f9;
+  --color-white: #ffffff;
+}
 html, body{
     height: 100%;
     overflow: hidden;
+    transition: all 1.4s ease-in-out;
 }
 
 header{
@@ -119,6 +125,7 @@ main{
       .section{
         height: 100%;
         padding: 80px;
+        transition: all .4s ease-in-out;
         .nav-menu-active-txt{
           text-align: center;
           width: 30%;
@@ -149,18 +156,21 @@ main{
       .main-content-txt{
         width: 30%;
         max-width: 430px;
-        color: white;
+        color: var(--color-gray);
         text-align: justify;
         h1{
           font-size: 2rem;
           text-transform: uppercase;
           margin-left: 5px;
+          font-weight: 400;
           span{
             display: inline-block;
             margin-left: -10px;
             width: 100%;
             font-size: 9.3rem;
             font-family: 'Bellefair', serif;
+            font-weight: 400;
+            color: var(--color-white);
           }
         }
         p{
@@ -183,10 +193,13 @@ main{
           filter: invert(1);
           box-shadow: 0px 0px 15px 5px #ffffff; 
         }
-        a{
-          color: black;
-          text-decoration: none;
+        h2{
+            font-family: 'Bellefair', serif;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            font-weight: 400;
         }
+        
       }
       }
       .destination{
