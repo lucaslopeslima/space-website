@@ -507,7 +507,8 @@ main .main-content .crew .tecnology-slide .owl-carousel {
 
 main .main-content .crew .tecnology-slide .owl-carousel .item {
   width: 100%;
-  height: 100%;
+  height: 100px;
+  margin-left: 15px;
   background-color: yellow;
 }
 

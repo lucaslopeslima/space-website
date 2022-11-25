@@ -1,9 +1,20 @@
-$('.custom1').owlCarousel({
-    animateOut: 'fadeOut',
-    animateIn: 'flipInX',
-    items:1,
-    margin:30,
-    stagePadding:30,
-    smartSpeed:450
+$('.owl-carousel').owlCarousel({
+    stagePadding: 50,
+    loop:true,
+    margin:10,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
 });
 console.log('setup')
