@@ -110,107 +110,7 @@ main{
     padding-top: 35px;
     font-family: 'Barlow', sans-serif;
     font-weight: 400;
-    nav{
-        /* background-color: #ff000034; */
-        min-height: 75px;
-        /* height: 10vh; */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .logo-wrap{
-          /* background-color: green; */
-          width: 80px;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          margin-left: 2%;
-          .logo{
-            background-image: url('../assets/shared/logo.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 50px;
-            height: 80px;
-          }
-        }
-        
-        .content-wrap{
-          width: 100%;
-          display: flex;
-          justify-content: flex-end;
-          .line-wrap{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 2;
-            margin-right: -35px;
-            .nav-line{
-            height: 2px;
-            width: 20vw;
-            background-color: #77777762;
-              backdrop-filter: blur(10px);
-            }
-          }
-        
-          .menu{
-            background-color: #55545421;
-            backdrop-filter: blur(10px);
-            min-width: 650px;
-            width: 60vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            a{
-                margin-left: 80px;
-                /* background-color: red; */
-                line-height: 75px;
-                text-decoration: none;
-                color: white;
-                position: relative;
-                /* &:hover{
-                    border-top: 3px solid transparent;
-                    border-bottom: 3px solid white;
-                } */
-                /* &::after {
-                    position: absolute;
-                    content: "";
-                    top: 100%;
-                    left: 0;
-                    width: 100%;
-                    height: 3px;
-                    background: white;
-                    transform: scaleX(0);
-                    transform-origin: right;
-                    transition: transform 0.5s;
-                  }
-            
-                  &:hover::after {
-                    transform: scaleX(1);
-                    transform-origin: left;
-                  } */
-                  &::before{
-                    content: '';
-                    position: absolute;
-                    height: 3px;
-                    width: 0px;
-                    left: 0;
-                    bottom: 0px;
-                    background: #979797; 
-                    transition: all .5s ease;
-                  }
-                  &:hover::before{
-                    width: 100%;
-                  }
-                  &:active::before{
-                    width: 100%;
-                    background: white;
-                  }
-            }
-        }
-
-        }
-        
-    }
+    
     .main-content{
       margin-top: 85px;
       height: 100%;
@@ -374,18 +274,20 @@ main{
       }
       .crew{
         display: none;
+        /* background-color: red; */
         /* transform: translateY(-200%); */
-        .tecnology-slide{
+        padding-bottom: 15px;
+        .crew-slide{
           /* background-color: red; */
           height: 70%;
           .owl-carousel{
             /* background-color: blue; */
             height: 100%;
             position: relative;
-            span{
+            /* span{
               filter: invert(1);
               
-            }
+            } */
             .item{
               width: 100vw;
               height: 70vh;
@@ -435,6 +337,14 @@ main{
 
 
 /* GERAIS */
+.owl-dots{
+  display: flex;
+  margin-left: 85px;
+  /* filter: invert(1); */
+  .active{
+    background: white;
+  }
+}
 .active-btn{
   position: relative;
   &::before{
@@ -447,6 +357,6 @@ main{
     background: white !important;
   }
 }
-.active{
+.sec-active{
   display: block !important;
 }
