@@ -9,8 +9,9 @@
 }
 html, body{
     height: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
+
 header{
   padding-top: 15px;
   width: 100vw;
@@ -65,9 +66,10 @@ header{
         justify-content: center;
         align-items: center;
         
-        a{
+        a, div{
+          cursor: pointer;
+            text-transform: uppercase;
             margin-left: 80px;
-            /* background-color: red; */
             line-height: 75px;
             text-decoration: none;
             color: white;
@@ -85,9 +87,9 @@ header{
               &:hover::before{
                 width: 100%;
               }
-              &:active::before{
-                width: 100%;
-                background: white;
+              span{
+                font-weight: bold;
+                margin-right: 5px;
               }
         }
     }
@@ -209,7 +211,7 @@ main{
     .main-content{
       margin-top: 85px;
       height: 100%;
-      background-color: green;
+      /* background-color: green; */
       height: 100vh;
       .section{
         height: 100%;
@@ -227,14 +229,20 @@ main{
         }
       }
       .home{
-        opacity: 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: green;
+        /* visibility: hidden; */
+        display: none;
+        .home-wrap{
+          display: flex;
+          height: 70%;
+          /* padding: 80px; */
+          justify-content: space-around;
+          align-items: center;
+          /* background-color: green; */
+          
+          /* position: absolute;
+          bottom: 80px; */
+        }
         
-        /* position: absolute;
-        bottom: 80px; */
       .main-content-txt{
         width: 30%;
         max-width: 430px;
@@ -279,11 +287,12 @@ main{
       }
       }
       .destination{
-        opacity: 0;
+        /* visibility: hidden; */
+        display: none;
         /* background-color: green; */
         /* padding: 80px; */
         /* background-color: rgba(255, 0, 0, 0.658); */
-        transform: translateY(-100%);
+        /* transform: translateY(-100%); */
         
         .destination-content{
           padding-top: 55px;
@@ -361,13 +370,13 @@ main{
         }
       }
       .crew{
-        z-index: 999;
-        transform: translateY(-200%);
+        display: none;
+        /* transform: translateY(-200%); */
         .tecnology-slide{
-          background-color: red;
+          /* background-color: red; */
           height: 70%;
           .owl-carousel{
-            background-color: blue;
+            /* background-color: blue; */
             height: 100%;
             position: relative;
             span{
@@ -415,9 +424,26 @@ main{
         }
       }
       .tecnology{
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-300%);
+        display: none;
+        /* transform: translateY(-300%); */
       }
     }
+}
+
+
+/* GERAIS */
+.active-btn{
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute !important;
+    height: 3px;
+    width: 100% !important;
+    left: 0;
+    bottom: 0px;
+    background: white !important;
+  }
+}
+.active{
+  display: block !important;
 }
