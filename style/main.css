@@ -283,7 +283,6 @@ main .main-content .destination {
 }
 
 main .main-content .destination .destination-content {
-  background-color: green;
   padding-top: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
