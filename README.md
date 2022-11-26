@@ -11,7 +11,7 @@
 
 # Conteúdo:
 - Documentação:
-  - JDquery Owl Carrousel
+  - JQuery Owl Carrousel
 - Setup
   - HTML
   - Scss
